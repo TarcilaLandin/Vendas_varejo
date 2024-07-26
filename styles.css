@@ -1,0 +1,78 @@
+/* Lateral esquerda */
+[data-testid="stSidebar"] {
+    background-color: #494345;
+    width: 50px; /* Ajuste o valor conforme necessário */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse a largura da sidebar */
+}
+/* Texto da sidebar e headers */
+[data-testid="stSidebar"] * {
+    color: white !important;
+}
+/* Fundo dos gráficos */
+.stPlotlyChart {
+    background-color: #E6E6E6;
+}
+
+/* Estilo para textos dentro dos gráficos */
+.stPlotlyChart .plotly .xaxis .tick text,
+.stPlotlyChart .plotly .yaxis .tick text,
+.stPlotlyChart .plotly .legend .text {
+    font-size: 8pt !important;
+}
+
+/* Fundo do título */
+header {
+    background-color: #C1C1C1;
+}
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Margem superior do conteúdo principal */
+.block-container {
+    padding-top: 2rem;  /* Ajuste o valor conforme necessário */
+    padding-left: 1rem;  /* Ajuste para controlar a margem lateral esquerda */
+    padding-right: 1rem; /* Ajuste para controlar a margem lateral direita */
+    max-width: 100%;  /* Garante que o conteúdo ocupe toda a largura possível */
+}
+/* Ajustes para a largura do conteúdo principal */
+.streamlit-expanderHeader {
+    margin-left: 0;
+    margin-right: 0;
+}
+.css-1kyxreq {
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Estilo dos cards */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px; /* Define uma altura fixa para todos os cards */
+}
+.card-title {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+.card-value {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+/* Margem superior para o gráfico de Vendas por Mês */
+.stPlotlyChart:nth-of-type(1) {
+    margin-top: 1rem; /* Ajuste o valor conforme necessário */
+}
+/* Ajuste o espaçamento entre as linhas de gráficos */
+.first-row, .second-row {
+    margin: 0; /* Remove margens adicionais */
+    padding: 0; /* Remove padding se necessário */
+}
